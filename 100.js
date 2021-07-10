@@ -119,7 +119,7 @@ function fn1_1() {
             cashid_10.innerHTML = cash_1;
             break;
         case 10:
-            opt_1 = 5000;
+            opt_1 = 50;
             console.log('點石成金成就')
             document.getElementById('optsid_1_1').innerHTML = "";
             document.getElementById('div2_1').innerHTML = "乾乾已經滿級，<br>不要怕餵完，<br>倉庫還有幾萬包!";
