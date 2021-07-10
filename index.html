@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>餵餵貓</title>
+    <link rel="icon" href="./img/cat1.png">
+    <link rel="stylesheet" href="./110.css">
+</head>
+
+<body>
+
+    <div id="div_back_0">
+        <div id="div_back_1">
+            <section class="div_3">
+                <!-- 左頁面，放總金額與點餅乾 -->
+                <div>
+                    <!-- 點餅乾的袋子 -->
+                    <div id="img_back"></div>
+                    <div id="test112">
+                        <input type="checkbox" id="nomusic" ondragstart="return false" oncopy="return false"><span
+                            id="nomusic2"><label onclick="nomusic1()" for="nomusic" ondragstart="return false"
+                                oncopy="return false;" id="nomusicname">背景樂靜音</label></span>
+
+                        <input type="checkbox" id="nomusic0" ondragstart="return false" oncopy="return false"><span
+                            id="nomusic02"><label onclick="nomusic2()" for="nomusic0" ondragstart="return false"
+                                oncopy="return false" id="nomusicname0">音效開啟</label></span>
+
+                        <button id="orback1" onclick="fn_bk_0()">樸實背景</button>
+
+                        <img ondragstart="return false" src="./img/tenor.gif" id="ef_1">
+                        <img onclick="fn_ef_10()" ondragstart="return false" src="./img/imgb/christmas-hat-red-hat.gif" id="ef_2">
+                        <img onclick="fn_ef_20()" ondragstart="return false" src="./img/imgb/heart-love.gif" id="ef_3">
+                        <img onclick="fn_ef_30()" ondragstart="return false" src="./img/imgb/rat-mouse.gif" id="ef_4">
+                        <img onclick="fn_ef_50()" ondragstart="return false" src="./img/imgb/scarf-pride.gif" id="ef_5">
+
+
+                        <img onclick="fn1_0()" onselectstart="return false" ondragstart="return false"
+                            onmousedown="catimgdown()" onmouseup="catimgup()" src="./img/cat1.png" width="270px"
+                            id="catimg1">
+                        <!-- 顯示吃多少 -->
+                        <div id="test111" style="font-size: 25px;"></div>
+
+                    </div>
+                    <audio src="./audio/cut1.mp3" id="cataud1"></audio>
+                    <audio src="./audio/nyan-cat-original.mp3" muted="true" autoplay="true" loop="true"
+                        id="cataud2"></audio>
+                    <audio src="./audio/backmusic.mp3" id="cataud3"></audio>
+                    <audio src="./audio/playback.mp3" id="cataud4"></audio>
+                    <audio src="./audio/buy1.mp3" id="cataud5"></audio>
+                    <audio src="./audio/coin03.mp3" id="cataud6"></audio>
+                    <!-- <audio src="./audio/pop1.mp3" id="cataud3"></audio> -->
+
+                    <!-- <div id="catimg10">hi</div>
+                    <div id="catimg20"></div> -->
+                    <!-- <button onclick="fn1_0()" id="button1">圖片</button> -->
+
+                </div>
+
+                <div id="div3_10">
+                    <div class="div3_1">
+                        <span class="div3_2">飽足度<span id="div3_2a">吃得飽飽的，<br>可以用來買罐罐。</span></span><br>
+                        <span class="div3_3" id="sum_allid"></span>
+
+                        <!-- 顯示總金額的袋子 -->
+                    </div>
+                    <div class="div3_1" id="div3_1_b">
+
+                        <span class="div3_2" id="div3_2st">幸福感<span id="div3_2b">貓貓吃得飽飽的，<br>不是很幸福嗎?</span></span><br>
+                        <span class="div3_3" id="sum_allid2"></span>
+                        <!-- 顯示總金額的袋子 -->
+                    </div>
+                </div>
+            </section>
+            <section class="div_2">
+                <!-- 顯示數值與升級按鈕 -->
+                <div>
+                    <span class="div_00">食物 </span><span id="div_00f"><br>使用飽足度換取更多貓貓食物。</span>
+                    <div class="div2_1">
+                        <button class="button2" onclick="fn_ctrl_01()" id="lv_max1"><span id="lv_max10">升級</span><span id="div2_1">下一級需要<br><span
+                                    class="div2_cash" id='cashid_1'>100000</span><br>的飽足</span></button>
+                        <!-- <img src="./img/icon/icon1_工作區域 1.png" width="50px" height="50px"> -->
+                        <span class="div2_7">乾乾<span id="div2_7_1">你的滑鼠就是乾乾，<br>一粒就是 1 飽足，<br>現在就去餵吧!</span></span>
+
+                        <div class="div2_4">
+                            <span>
+                                現在點一下 = <span class="div2_6" id="optid_1">1</span> 粒。
+                            </span><br>
+
+                            <span id="optsid_1_1"> 下級點一下 = <span class="div2_6" id="optsid_1">2</span> 粒。
+                            </span><br>
+
+                            <span class="div2_5">
+                                你餵了 <span class="div2_6" id="aid_1">100000000</span> 飽足。
+                            </span>
+                        </div>
+
+                        <span class="div2_2">
+                            LV <span class="div2_3" id="lvid_1">1</span>
+                        </span>
+
+                    </div>
+
+
+                    <div class="div2_1">
+                        <button onclick="fn_ctrl_02()" class="button2" id="lv_max2"><span id="lv_max20">升級</span><span id="div2_2">下一級需要<br><span
+                                    class="div2_cash" id='cashid_2'>100000</span><br>的飽足</span></button>
+
+                        <span class="div2_7">罐罐<span id="div2_7_2">特別好吃，<br>偶爾可以吃到，<br>大概有四倍的好吃。</span></span>
+
+                        <div class="div2_4">
+                            <span>
+                                現在有 <span class="div2_6" id="optid_2">0</span> %機率吃到。
+                            </span><br>
+
+                            <span id="optsid_2_1">
+                                下級有 <span class="div2_6" id="optsid_2">2</span> %機率吃到。
+                            </span><br>
+
+                            <span class="div2_5">
+                                罐罐多了 <span class="div2_6" id="aid_2">100000000</span> 飽足。
+                            </span>
+
+                        </div>
+
+                        <span class="div2_2">
+                            LV <span class="div2_3" id="lvid_2">1</span>
+                        </span>
+
+                    </div>
+
+
+                    <div class="div2_1">
+                        <button onclick="fn_ctrl_03()" class="button2" id="lv_max3"><span id="lv_max30">升級</span><span id="div2_3">下一級需要<br><span
+                                    class="div2_cash" id='cashid_3'>100000</span><br>的飽足</span></button>
+
+                        <span class="div2_7">自動餵食器<span id="div2_7_3">懶人與外出必備，<br>你的貓貓不會餓著了。</span></span>
+
+                        <div class="div2_4">
+
+                            <span id="optid_30">
+                                現在每 <span class="div2_6" id="optid_3">x</span> 秒餵一次。
+                            </span><br>
+
+                            <span id="optsid_3_1">
+                                下級每 <span class="div2_6" id="optsid_3">9</span> 秒餵一次。
+                            </span><br>
+
+                            <span class="div2_5">
+                                多幫你餵 <span class="div2_6" id="aid_3">100000000</span> 飽足。
+                            </span>
+
+                        </div>
+
+                        <span class="div2_2">
+                            LV <span class="div2_3" id="lvid_3">1</span>
+                        </span>
+
+                    </div>
+
+
+                    <div class="div2_1">
+                        <button onclick="fn_ctrl_04()" class="button2" id="lv_max4"><span id="lv_max40">升級</span><span id="div2_4">下一級需要<br><span
+                                    class="div2_cash" id='cashid_4'>100000</span><br>的飽足</span></button>
+
+                        <span class="div2_7">阿嬤<span id="div2_7_4">阿嬤不是食物，<br>但要小心阿嬤!!<br>會幫你多餵很多零食。</span></span>
+
+                        <div class="div2_4">
+
+                            <span>
+                                現在每秒幫你餵 <span class="div2_6" id="optid_4">x</span> 飽足。
+                            </span><br>
+
+                            <span id="optsid_4_1">
+                                下級每秒幫你餵 <span class="div2_6" id="optsid_4">25</span> 飽足。
+                            </span><br>
+
+                            <span class="div2_5">
+                                阿嬤餵了 <span class="div2_6" id="aid_4">100000000</span> 飽足。
+                            </span>
+
+                        </div>
+
+                        <span class="div2_2">
+                            LV <span class="div2_3" id="lvid_4">1</span>
+                        </span>
+                    </div>
+
+
+                </div>
+
+            </section>
+            <section class="div_2">
+                <div>
+                    <span class="div_00" id="div_00s">商店</span><span id="div_00ss"><br>送貓貓禮物，貓貓更幸福。</span>
+                    <div class="div4_1">
+                        <button class="button3" onclick="fn_ef_2()" id="bk_button1">購買</button>
+                        <!-- <img src="./img/icon/icon1_工作區域 1.png" width="50px" height="50px"> -->
+                        <span class="div4_2">聖誕帽</span>
+
+                        <div class="div4_3">
+                            <span>
+                                一頂可愛的帽子，佳節需要。
+                            </span>
+
+                        </div>
+                        <span class="div4_4">
+                            <span class="div4_40">1500</span> 飽足
+                        </span>
+                    </div>
+
+                    <div class="div4_1">
+                        <button class="button3" onclick="fn_ef_3()" id="bk_button2">購買</button>
+                        <!-- <img src="./img/icon/icon1_工作區域 1.png" width="50px" height="50px"> -->
+                        <span class="div4_2">愛心泡泡</span>
+
+                        <div class="div4_3">
+                            <span>
+                                貓咪變得心動動。
+                            </span>
+                        </div>
+                        <span class="div4_4">
+                            <span class="div4_40">3000</span> 飽足
+                        </span>
+                    </div>
+
+                    <div class="div4_1">
+                        <button class="button3" onclick="fn_ef_4()" id="bk_button3">購買</button>
+                        <!-- <img src="./img/icon/icon1_工作區域 1.png" width="50px" height="50px"> -->
+                        <span class="div4_2">小老鼠夥伴</span>
+
+                        <div class="div4_3">
+                            <span>
+                                不是食物和玩具。
+                            </span>
+                        </div>
+                        <span class="div4_4">
+                            <span class="div4_40">5000</span> 飽足
+                        </span>
+                    </div>
+
+                    <div class="div4_1">
+                        <button class="button3" onclick="fn_ef_5()" id="bk_button4">購買</button>
+                        <!-- <img src="./img/icon/icon1_工作區域 1.png" width="50px" height="50px"> -->
+                        <span class="div4_2">圍巾</span>
+
+                        <div class="div4_3">
+                            <span>
+                                冬季保暖小物。
+                            </span>
+                        </div>
+                        <span class="div4_4">
+                            <span class="div4_40">8000</span> 飽足
+                        </span>
+                    </div>
+
+                    <div class="div4_1">
+                        <button class="button3" onclick="fn_ef_1()" id="bk_button5">購買</button>
+                        <!-- <img src="./img/icon/icon1_工作區域 1.png" width="50px" height="50px"> -->
+                        <span class="div4_2">閃亮亮特效</span>
+
+                        <div class="div4_3">
+                            <span>
+                                很嗨。
+                            </span>
+
+                        </div>
+                        <span class="div4_4">
+                            <span class="div4_40">12000</span> 飽足
+                        </span>
+                    </div>
+
+                    <div class="div4_1">
+                        <button class="button3" onclick="fn_bk_1()" id="bk_button6">購買</button>
+                        <!-- <img src="./img/icon/icon1_工作區域 1.png" width="50px" height="50px"> -->
+                        <span class="div4_2">星空背景</span>
+
+                        <div class="div4_3">
+                            <span>
+                                飛向宇宙，浩瀚無垠。
+                            </span>
+
+                        </div>
+                        <span class="div4_4">
+                            <span class="div4_40">20000</span> 飽足
+                        </span>
+                    </div>
+
+                    <div class="div4_1">
+                        <button class="button3" onclick="fn_bk_2()" id="bk_button7">購買</button>
+                        <!-- <img src="./img/icon/icon1_工作區域 1.png" width="50px" height="50px"> -->
+                        <span class="div4_2">煙火背景</span>
+
+                        <div class="div4_3">
+                            <span>
+                                告白的首選。
+                            </span>
+
+                        </div>
+                        <span class="div4_4">
+                            <span class="div4_40">30000</span> 飽足
+                        </span>
+                    </div>
+                    <!-- 顯示成就 -->
+                </div>
+            </section>
+        </div>
+
+    </div>
+
+    <script src="./100.js"></script>
+</body>
+
+</html>

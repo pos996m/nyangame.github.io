@@ -1,0 +1,885 @@
+/* body{
+    background-color: lightsalmon;
+} */
+
+#div_back_0 {
+    /* position: absolute; */
+    position: relative;
+    width: 1500px;
+    height: 720px;
+    top: -8px;
+    left: -8px;
+    padding: 50px 100px;
+    box-sizing: border-box;
+    background-color:midnightblue;
+    /* background-color: lightsalmon; */
+    /* background-image: url(./img/2shookt-taken-a-back.gif); */
+    /* background-image: url(./img/astronomy-1867616_1920.jpg); */
+    background-image: url(./img/f123.gif);
+    /* background-repeat: initial; */
+    background-position: 12% 30%;
+
+   
+}
+
+/* 三大區塊的小兩區 */
+.div_2 {
+    display: inline-block;
+    width: 370px;
+    height: 620px;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: lightyellow;
+    box-shadow: 6px 6px 6px 4px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    /* position: relative; */
+    padding: 30px;
+    /* border: dashed 6px brown; */
+}
+
+/* 三大區塊的大一區 */
+.div_3 {
+    display: inline-block;
+    width: 520px;
+    height: 620px;
+    position: relative;
+    margin: 5px;
+    background-color: lightyellow;
+    border-radius: 10px;
+    box-sizing: border-box;
+    /* padding: 30px; */
+    box-shadow: 6px 6px 6px 4px rgba(0, 0, 0, 0.2);
+    /* inset -6px -6px 0px 0px lightcoral */
+    /* border: solid 5px lightcoral; */
+
+}
+
+/* 升級區的盒子 */
+
+.div2_1 {
+    /* display:inline-block; */
+    /* float: left; */
+    /* top: auto; */
+    border-radius: 5px;
+    background-color: white;
+    position: relative;
+    top: 50px;
+    width: 290px;
+    height: 120px;
+    margin: 6px;
+    box-sizing: border-box;
+    padding: 0px 10px;
+    box-shadow: -10px 0px 0px rgb(236, 137, 98), -5px 10px 8px rgba(0, 0, 0, 0.24);
+    
+    
+    /* margin: auto; */
+}
+
+/* 升級的按鈕 */
+
+.button2 {
+    float: right;
+    position: absolute;
+    top: 45%;
+    right: 5%;
+    font-weight: bolder;
+    background-color: lightsalmon;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    background-size: 10px 15px;
+    padding: 8px 12px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer ;
+}
+
+.button2:hover {
+    background-color: brown;
+    /* font-size: 12px; */
+}
+
+/* .button2:active {
+    box-shadow: 0px 0px 15px 0px lightsalmon;
+    
+} */
+
+/* LV的字體 */
+
+.div2_2 {
+    position: absolute;
+    top: 12%;
+    right: 8%;
+    /* left: %; */
+    /* right: 10%; */
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    text-indent: 1em;
+    font-family: Impact;
+    font-weight: bolder;
+}
+
+/* LV後面的字 */
+
+.div2_3 {
+    font-size: 25px;
+    font-family: Impact;
+    color: brown;
+    font-weight: bolder;
+}
+
+/* 技能說明 */
+
+.div2_4 {
+    position: absolute;
+    top: 50%;
+    right: auto;
+    font-weight: bolder;
+    /* text-align: center; */
+    letter-spacing: 0.1em;
+    /* text-indent: 1em; */
+    font-size: 14px;
+    color:rgb(56, 56, 56);
+    /* border: solid 3px black; */
+}
+
+/* 技能說明小字 */
+
+.div2_5 {
+    font-size: 12px;
+    
+}
+
+.div2_6 {
+    font-family: monospace;
+    color: brown;
+}
+
+/* 技能名標題 */
+
+.div2_7 {
+    position: absolute;
+    top: 5%;
+    left: 1%;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    background-color: lightsalmon;
+    box-shadow: 3px 3px 0px rgba(128, 128, 128, 0.548);
+    box-sizing: border-box;
+    margin: 5px;
+    padding: 2px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.div2_7:hover{
+    background-color: brown;
+}
+
+/* 貓手解說 */
+
+#div2_7_1 {
+    position: absolute;
+    top: -250%;
+    left: -417%;
+    background-color: brown;
+    /* background-color: lightpink; */
+    color: white;
+    font-size: 14px;
+    /* text-shadow: -1px 1px 0px brown; */
+    letter-spacing: 0.1em;
+    height: 100px;
+    width: 200px;
+    border-radius: 15px 15px 4px 15px;
+    box-sizing: border-box;
+    padding: 10px;
+    box-shadow: -5px 5px 0px white;
+    /* border: dashed 5px white; */
+    z-index: 1;
+    display: none;
+}
+
+.div2_7:hover #div2_7_1 {
+    display: block;
+}
+
+/* 大打貓手解說 */
+
+#div2_7_2 {
+    position: absolute;
+    top: -250%;
+    left: -417%;
+    background-color: brown;
+    color: white;
+    font-size: 14px;
+    /* text-shadow: -1px 1px 0px brown; */
+    letter-spacing: 0.1em;
+    height: 100px;
+    width: 200px;
+    border-radius: 15px 15px 4px 15px;
+    box-sizing: border-box;
+    padding: 10px;
+    box-shadow: -5px 5px 0px white;
+    /* border: dashed 5px white; */
+    z-index: 3;
+    display: none;
+}
+
+.div2_7:hover #div2_7_2 {
+    display: block;
+}
+
+/* 借貓手解說 */
+
+#div2_7_3 {
+    position: absolute;
+    top: -250%;
+    left: -190%;
+    background-color: brown;
+    color: white;
+    font-size: 14px;
+    /* text-shadow: -1px 1px 0px brown; */
+    letter-spacing: 0.1em;
+    height: 100px;
+    width: 200px;
+    border-radius: 15px 15px 4px 15px;
+    box-sizing: border-box;
+    padding: 10px;
+    box-shadow: -5px 5px 0px white;
+    /* border: dashed 5px white; */
+    z-index: 2;
+    display: none;
+}
+
+.div2_7:hover #div2_7_3 {
+    display: block;
+}
+
+/* 貓貓貓貓貓解說 */
+
+#div2_7_4 {
+    position: absolute;
+    top: -250%;
+    left: -417%;
+    background-color: brown;
+    color: white;
+    font-size: 14px;
+    /* text-shadow: -1px 1px 0px brown; */
+    letter-spacing: 0.1em;
+    height: 100px;
+    width: 200px;
+    border-radius: 15px 15px 4px 15px;
+    box-sizing: border-box;
+    padding: 10px;
+    box-shadow: -5px 5px 0px white;
+    /* border: dashed 5px white; */
+    z-index: 2;
+    display: none;
+}
+
+.div2_7:hover #div2_7_4 {
+    display: block;
+}
+
+
+/* 測試按鈕 */
+#button1{
+    position: fixed;
+    top: 20%;
+}
+
+/* 升級需要的經驗值數字 */
+.div2_cash{
+    font-size: 20px;
+}
+
+/* 貓手經驗值的框 */
+#div2_1 {
+    position: absolute;
+    top: -220%;
+    left: 120%;
+    background-color: brown;
+    /* background-color: lightpink; */
+    color: white;
+    font-size: 14px;
+    /* text-shadow: -1px 1px 0px brown; */
+    letter-spacing: 0.1em;
+    height: 100px;
+    width: 200px;
+    border-radius: 15px 15px 15px 4px;
+    box-sizing: border-box;
+    padding: 10px;
+    box-shadow: -5px 5px 0px white;
+    /* border: dashed 5px white; */
+    z-index: 2;
+    display: none;
+}
+
+.button2:hover #div2_1 {
+    display: block;
+}
+
+/* 大打貓手經驗值的框 */
+#div2_2 {
+    position: absolute;
+    top: -220%;
+    left: 120%;
+    background-color: brown;
+    /* background-color: lightpink; */
+    color: white;
+    font-size: 14px;
+    /* text-shadow: -1px 1px 0px brown; */
+    letter-spacing: 0.1em;
+    height: 100px;
+    width: 200px;
+    border-radius: 15px 15px 15px 4px;
+    box-sizing: border-box;
+    padding: 10px;
+    box-shadow: -5px 5px 0px white;
+    /* border: dashed 5px white; */
+    z-index: 1;
+    display: none;
+}
+
+.button2:hover #div2_2 {
+    display: block;
+}
+
+/* 借貓手經驗值的框 */
+#div2_3 {
+    position: absolute;
+    top: -220%;
+    left: 120%;
+    background-color: brown;
+    /* background-color: lightpink; */
+    color: white;
+    font-size: 14px;
+    /* text-shadow: -1px 1px 0px brown; */
+    letter-spacing: 0.1em;
+    height: 100px;
+    width: 200px;
+    border-radius: 15px 15px 15px 4px;
+    box-sizing: border-box;
+    padding: 10px;
+    box-shadow: -5px 5px 0px white;
+    /* border: dashed 5px white; */
+    z-index: 1;
+    display: none;
+}
+
+.button2:hover #div2_3 {
+    display: block;
+}
+
+/* 大打貓手經驗值的框 */
+#div2_4 {
+    position: absolute;
+    top: -220%;
+    left: 120%;
+    /* background-color: rgb(238, 136, 95); */
+    background-color: brown;
+    /* background-color: lightpink; */
+    color: white;
+    font-size: 14px;
+    /* text-shadow: -1px 1px 0px brown; */
+    letter-spacing: 0.1em;
+    height: 100px;
+    width: 200px;
+    border-radius: 15px 15px 15px 4px;
+    box-sizing: border-box;
+    padding: 10px;
+    box-shadow: -5px 5px 0px white;
+    /* border: dashed 5px white; */
+    z-index: 1;
+    display: none;
+}
+
+.button2:hover #div2_4 {
+    display: block;
+}
+
+/* 貓貓下面的框 */
+.div3_1{
+    /* display:inline-block; */
+    /* float: left; */
+    position: absolute;
+    bottom:18%;
+    left: 6%;
+    /* top: auto; */
+    border-radius: 5px;
+    background-color: lightsalmon;
+    width: 390px;
+    height: 100px;
+    margin: 30px 45px;
+    box-sizing: border-box;
+    padding: 0px 10px;
+    box-shadow: -10px 0px 0px rgb(143, 37, 37), -5px 10px 8px rgba(0, 0, 0, 0.24);
+    z-index: 2;
+    
+    /* margin: auto; */
+}
+
+#div3_1_b{
+    bottom: 0%;
+}
+
+/* 飽足與滿足的樣式 */
+.div3_2{
+    position: relative;
+    top: 5%;
+    /* left: 1%; */
+    color: white;
+    font-weight: bolder;
+    font-size: 26px;
+    letter-spacing: 0.1em;
+    background-color: brown;
+    box-shadow: -5px 0px 0px white;
+    box-sizing: border-box;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+/* 飽足數字樣式 */
+.div3_3{
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    color: white;
+    letter-spacing: 0.1em;
+    text-indent: 1em;
+    font-family: Impact;
+    font-weight: bolder;
+    font-size: 36px;
+    text-align: center;
+    text-shadow: 3px 3px 0px gray;
+    /* background-color: rgba(0, 0, 0, 0.103); */
+    /* border-radius: 5px; */
+    /* box-sizing: border-box; */
+    /* padding: 1px -50px; */
+    /* text-shadow: 0px 0px 4px gray; */
+}
+
+
+/* 貓的圖片 */
+#catimg1{
+    position: absolute;
+    /* margin: auto; */
+    top: 8%;
+    left: 23%;
+    /* width: 55%; */
+    cursor: pointer;
+    /* border: solid 5px black; */
+    /* padding: 100px; */
+    box-sizing: border-box;
+    /* box-shadow: -5px 10px 8px rgba(0, 0, 0, 0.24); */
+}
+
+#catimg1:hover{
+    top: 5%;
+    left: 21%;
+    width: 55%;
+}
+
+
+/* 加多少飽足度的樣式 */
+#test111{
+    position: absolute;
+    top: 15%;
+    left: 72%;
+    /* right: 18px; */
+    /* bottom: 0%; */
+    /* color:white; */
+    color:brown;
+    text-shadow: -2px 2px 0px white;
+    /* -webkit-text-stroke: 1px white;  */
+    font-weight: bolder;
+    font-family: monospace;
+    font-size: 14 px;
+    opacity: 1;
+}
+/* 罐罐變小字 */
+#test1110{
+    font-size: 14px;
+}
+
+/* 貓貓背後 */
+#img_back{
+    position: absolute;
+    top: 6%;
+    left: 6%;
+    border-radius: 10px;
+    width: 90%;
+    height: 500px;
+    background-color: white;
+    box-shadow: -12px 0px 0px lightsalmon,-5px 10px 8px rgba(0, 0, 0, 0.24);
+    background-image: url(./img/space-3197611_1920.jpg);
+    background-position: 33% 60%;
+    background-repeat: no-repeat;
+    background-size: 150%;
+    /* background-image: url(./img/imgb/home-1680800_1920.jpg); */
+    /* background-size: 180%; */
+    /* background-position: 50% 20%; */
+    /* background-image: url(./img/imgb/room-4779953_1920.jpg); */
+    /* background-size: 180%; */
+    /* background-position: 50% 60%; */
+    /* box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.24); */
+    
+}
+
+/* 靜音按鈕 */
+input+span {
+    position: absolute;
+    padding: 3px 6px;
+    background-color: lightsalmon;
+    /* top: 5%; */
+    left: 5%;
+    color: white;
+    font-weight: bolder;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    box-sizing: border-box;
+    margin: 7px;
+    padding: 2px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select:none;
+    /* float: left; */
+}
+
+input:hover+span{
+    box-shadow: 0px 0px 6px gray;
+}
+
+
+label{
+    cursor: pointer;
+}
+input[type="checkbox"]{
+    display: none;
+}
+
+input:checked+span{
+    background-color: brown;
+}
+
+/* 音效靜音 */
+#nomusic0 + span{
+    /* position: relative; */
+    left: 23%;
+    /* float: left; */
+}
+
+
+
+/* 飽足度解說 */
+#div3_2a {
+    position: absolute;
+    top: -220%;
+    left: 120%;
+    background-color: brown;
+    /* background-color: lightpink; */
+    color: white;
+    font-size: 14px;
+    /* text-shadow: -1px 1px 0px brown; */
+    letter-spacing: 0.1em;
+    height: 100px;
+    width: 200px;
+    border-radius: 15px 15px 15px 4px;
+    box-sizing: border-box;
+    padding: 10px;
+    box-shadow: -5px 5px 0px white;
+    /* border: dashed 5px white; */
+    z-index: 1;
+    display: none;
+}
+
+.div3_2:hover #div3_2a {
+    display: block;
+}
+
+/* 幸福感解說 */
+#div3_2b {
+    position: absolute;
+    /* float: right; */
+    top: -220%;
+    left: 120%;
+    background-color: brown;
+    /* background-color: lightpink; */
+    color: white;
+    font-size: 14px;
+    /* text-shadow: -1px 1px 0px brown; */
+    letter-spacing: 0.1em;
+    height: 100px;
+    width: 200px;
+    border-radius: 15px 15px 15px 4px;
+    box-sizing: border-box;
+    padding: 10px;
+    box-shadow: -5px 5px 0px white;
+    /* border: dashed 5px white; */
+    z-index: 1;
+    display: none;
+}
+
+.div3_2:hover #div3_2b {
+    display: block;
+}
+
+/* 閃亮背景 */
+#ef_1{
+    position: absolute;
+    width: 90%;
+    height: 80.5%;
+    top: 6%;
+    left: 5.5%;
+    display: none;
+}
+
+/* 聖誕冒 */
+#ef_2{
+    position: absolute;
+    width: 25%;
+    height: 15%;
+    top: 2%;
+    left: 35%;
+    display: none;
+    z-index: 1;
+    cursor: pointer;
+}
+
+/* 冒愛心*/
+#ef_3{
+    position: absolute;
+    width: 23%;
+    height: 15%;
+    top: 30%;
+    right: 7%;
+    display: none;
+    z-index: 2;
+    cursor: pointer;
+}
+
+/* 老鼠夥伴 */
+#ef_4{
+    position: absolute;
+    width: 24%;
+    height: 20%;
+    top: 41.5%;
+    left: 5%;
+    display: none;
+    z-index: 3;
+    cursor: pointer;
+}
+
+/* 圍巾 */
+#ef_5{
+    position: absolute;
+    width: 60%;
+    height: 50%;
+    top: 32%;
+    left: 30%;
+    display: none;
+    z-index: 1;
+    /* 穿透的語法 */
+    pointer-events: none;
+}
+
+/* 商城的各框框 */
+.div4_1{
+    /* display:inline-block; */
+    /* float: left; */
+    top: 50px;
+    position: absolute;
+    border-radius: 5px;
+    background-color: white;
+    position: relative;
+    width: 300px;
+    height: 66px;
+    margin: 6px 5px;
+    box-sizing: border-box;
+    padding: 10px;
+    box-shadow: -10px 0px 0px brown, -5px 10px 8px rgba(0, 0, 0, 0.24);
+    /* opacity: 0.5; */
+}
+
+/* 商城標題 */
+.div4_2{
+    position: absolute;
+    top: 5%;
+    left: 1%;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    background-color: rgb(199, 74, 74);
+    box-shadow: 3px 3px 0px rgba(128, 128, 128, 0.466);
+    box-sizing: border-box;
+    margin: 5px;
+    padding: 2px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* 商城內文 */
+.div4_3{
+    position: absolute;
+    bottom: 5%;
+    font-weight: bolder;
+    /* text-align: center; */
+    letter-spacing: 0.1em;
+    /* text-indent: 1em; */
+    font-size: 14px;
+    color:rgb(56, 56, 56);
+}
+
+/* 商城的按鈕 */
+.button3 {
+    float: right;
+    position: absolute;
+    top: 40%;
+    right: 8%;
+    font-weight: bolder;
+    background-color: rgb(199, 74, 74);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    background-size: 10px 15px;
+    padding: 8px 12px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.button3:hover {
+    background-color: rgb(141, 37, 37);
+    /* font-size: 12px; */
+}
+/* 
+#bk_button1:hover{
+    background-color: rgb(199, 74, 74);
+    background-color: rgb(141, 37, 37);
+    background-color: rgb(29, 160, 153);
+} */
+
+
+/* .button3:active {
+    box-shadow: 0px 0px 15px 0px rgba(128, 128, 128, 1);
+    
+} */
+
+/* 商城金額樣式 */
+.div4_4{
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    /* bottom: 100%; */
+    /* width: 100px; */
+    /* bottom: 5%; */
+    font-weight: bolder;
+    /* text-align: center; */
+    letter-spacing: 0.1em;
+    /* text-indent: 1em; */
+    font-size: 12px;
+    color:rgb(56, 56, 56);
+}
+
+.div4_40{
+    font-size: 14px;
+    font-family: monospace;
+    color: brown;
+}
+
+/* 預設背景的按鈕 */
+#orback1{
+    position: absolute;
+    padding: 3px 6px;
+    background-color: brown;
+    /* top: 5%; */
+    left: 38.5%;
+    color: white;
+    font-weight: bolder;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    box-sizing: border-box;
+    margin: 7px;
+    padding: 2px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    z-index: 2;
+    /* float: left; */
+}
+
+#orback1:hover{
+    box-shadow: 0px 0px 6px gray;
+}
+
+.div_00{
+    position: absolute;
+    /* width: 290px; */
+    /* height: 60px; */
+    background-color: lightsalmon;
+    right: 49.5%;
+    top: 11%;
+    color: white;
+    font-weight: bolder;
+    font-size: 30px;
+    letter-spacing: 0.1em;
+    box-sizing: border-box;
+    /* margin: 7px; */
+    padding:5px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    /* z-index: 1; */
+    box-shadow: -10px 0px 0px rgb(236, 137, 98);
+    text-align: center;
+    /* float: left; */
+    height:50px ;
+    z-index: 1;
+}
+
+#div_00f{
+    box-sizing: border-box;
+    padding:5px 8px;
+    border-radius: 5px;
+    height:50px ;
+    background-color: white;
+    position: absolute;
+    font-weight: bolder;
+    color: rgb(77, 77, 77);
+    letter-spacing: 1px;
+    font-size: 13px;
+    right: 35.5%;
+    top: 11%;
+}
+
+#div_00ss{
+    box-sizing: border-box;
+    padding:5px 40px;
+    border-radius: 5px;
+    height:50px ;
+    background-color: white;
+    position: absolute;
+    font-weight: bolder;
+    color: rgb(77, 77, 77);
+    letter-spacing: 1px;
+    font-size: 13px;
+    right: 9.5%;
+    top: 11%;
+}
+
+
+#div_00s{
+    right: 24%;
+    
+    background-color: rgb(199, 74, 74);
+    box-shadow: -10px 0px 0px brown;
+}
+
+/* lightseagreen */
+

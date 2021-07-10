@@ -1,0 +1,287 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<ScappleDocument ID="87BC67CD-30C4-4D6A-8A7E-A797FC1CEC84" Version="1.1">
+   <Notes>
+      <Note Width="57.4219" FontSize="12" ID="0" Position="220.3,39.8">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>點擊功能</String>
+         <ConnectedNoteIDs>1-3</ConnectedNoteIDs>
+      </Note>
+      <Note Width="60.9131" FontSize="12" ID="1" Position="320.3,6.2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>圖片 按鈕</String>
+         <ConnectedNoteIDs>0</ConnectedNoteIDs>
+      </Note>
+      <Note Width="51.4771" FontSize="12" ID="2" Position="321.1,36.7">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>function
+輸入 +1</String>
+         <ConnectedNoteIDs>0, 17</ConnectedNoteIDs>
+      </Note>
+      <Note Width="82.4219" FontSize="12" ID="3" Position="317.2,83.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>顯示目前的值</String>
+         <ConnectedNoteIDs>0, 16</ConnectedNoteIDs>
+      </Note>
+      <Note Width="32.4219" FontSize="12" ID="4" Position="151.6,496.1">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>道具</String>
+         <ConnectedNoteIDs>5-6, 10</ConnectedNoteIDs>
+      </Note>
+      <Note Width="57.4219" FontSize="12" ID="5" Position="289.1,407.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>點了倍增</String>
+         <ConnectedNoteIDs>4, 7, 11</ConnectedNoteIDs>
+      </Note>
+      <Note Width="57.4219" FontSize="12" ID="6" Position="355.5,535.2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>自動點擊</String>
+         <ConnectedNoteIDs>4, 8-9</ConnectedNoteIDs>
+      </Note>
+      <Note Width="140.796" FontSize="12" ID="7" Position="393.0,407.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>點擊時有機率增加(暴擊)</String>
+         <ConnectedNoteIDs>5, 12, 18</ConnectedNoteIDs>
+      </Note>
+      <Note Width="94.9219" FontSize="12" ID="8" Position="468.8,535.2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>縮短時間點一下</String>
+         <ConnectedNoteIDs>6, 13</ConnectedNoteIDs>
+      </Note>
+      <Note Width="103.296" FontSize="12" ID="9" Position="460.9,568.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>(是以點擊為基礎)</String>
+         <ConnectedNoteIDs>6</ConnectedNoteIDs>
+      </Note>
+      <Note Width="69.9219" FontSize="12" ID="10" Position="246.1,665.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>自動生產線</String>
+         <ConnectedNoteIDs>4, 14</ConnectedNoteIDs>
+      </Note>
+      <Note Width="107.019" FontSize="12" ID="11" Position="262.5,210.2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>等級 a2_1
+LV 1 = 1
+LV 2 = 2 ; 20p
+LV 3 = 4 ; 40p
+LV 4 = 8 ; 80p
+LV 5 = 12 ; 120p
+LV 6 = 18 ; 200p
+LV 7 = 24 ; 280p
+LV 8 = 32 ; 400p
+LV 9 = 40 ; 520p
+LV 10 = 50 ; 700p</String>
+         <ConnectedNoteIDs>5</ConnectedNoteIDs>
+      </Note>
+      <Note Width="121.716" FontSize="12" ID="12" Position="481.2,211.7">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>等級 a2_2
+LV 1 = 0%
+LV 2 = 2% ; 50p
+LV 3 = 4% ; 100p
+LV 4 = 6% ; 175p
+LV 5 = 8% ; 275p
+LV 6 = 10% ; 400p
+LV 7 = 12% ; 550p
+LV 8 = 14% ; 725p
+LV 9 = 16% ; 925p
+LV 10 =20% ; 1350p</String>
+         <ConnectedNoteIDs>7</ConnectedNoteIDs>
+      </Note>
+      <Note Width="115.881" FontSize="12" ID="13" Position="632.0,460.2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>等級 a2_3
+LV 1 = 0
+LV 2 = 10/s ; 40p
+LV 3 = 9/s ; 60p
+LV 4 = 8/s ; 100p
+LV 5 = 7/s ; 160p
+LV 6 = 6/s ; 240p
+LV 7 = 5/s ; 340p
+LV 8 = 4/s ; 460p
+LV 9 = 3/s ; 600p
+LV 10 = 1/s ; 1140p</String>
+         <ConnectedNoteIDs>8, 21</ConnectedNoteIDs>
+      </Note>
+      <Note Width="82.4219" FontSize="12" ID="14" Position="382.0,667.2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>每秒額外增加</String>
+         <ConnectedNoteIDs>10, 15</ConnectedNoteIDs>
+      </Note>
+      <Note Width="137.793" FontSize="12" ID="15" Position="529.7,682.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>等級 a2_4
+LV 1 = 0
+LV 2 = 20/s ; 1000p
+LV 3 = 40/s ; 1500p
+LV 4 = 60/s ; 2500p
+LV 5 = 80/s ; 3500p
+LV 6 = 100/s ; 5000p
+LV 7 = 120/s ; 6500p
+LV 8 = 140/s ; 8000p
+LV 9 = 160/s ; 10000p
+LV 10 = 200/s ; 12000p</String>
+         <ConnectedNoteIDs>14, 24</ConnectedNoteIDs>
+      </Note>
+      <Note Width="50.7812" FontSize="12" ID="16" Position="458.6,83.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>sum_all</String>
+         <ConnectedNoteIDs>3</ConnectedNoteIDs>
+      </Note>
+      <Note Width="35.4004" FontSize="12" ID="17" Position="416.4,47.7">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>a1_1</String>
+         <ConnectedNoteIDs>2, 19</ConnectedNoteIDs>
+      </Note>
+      <Note Width="35.4004" FontSize="12" ID="18" Position="585.2,407.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>a1_2</String>
+         <ConnectedNoteIDs>7, 20</ConnectedNoteIDs>
+      </Note>
+      <Note Width="107.422" FontSize="12" ID="19" Position="507.8,44.5">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>要顯示你點了多少</String>
+         <ConnectedNoteIDs>17</ConnectedNoteIDs>
+      </Note>
+      <Note Width="107.422" FontSize="12" ID="20" Position="663.3,396.1">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>要顯示暴擊幫你加了額外多少</String>
+         <ConnectedNoteIDs>18</ConnectedNoteIDs>
+      </Note>
+      <Note Width="35.4004" FontSize="12" ID="21" Position="795.8,534.4">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>a1_3</String>
+         <ConnectedNoteIDs>13, 22</ConnectedNoteIDs>
+      </Note>
+      <Note Width="119.922" FontSize="12" ID="22" Position="867.2,532.8">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>要顯示幫你點了多少</String>
+         <ConnectedNoteIDs>21</ConnectedNoteIDs>
+      </Note>
+      <Note Width="119.922" FontSize="12" ID="23" Position="793.0,759.4">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>要顯示幫你多了多少</String>
+         <ConnectedNoteIDs>24</ConnectedNoteIDs>
+      </Note>
+      <Note Width="35.4004" FontSize="12" ID="24" Position="702.8,761.7">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>a1_4</String>
+         <ConnectedNoteIDs>15, 23</ConnectedNoteIDs>
+      </Note>
+   </Notes>
+   <BackgroundShapes/>
+   <NoteStyles>
+      <Style AffectFontStyle="No" AffectAlignment="No" Name="Yellow Bubble" ID="C8B42894-E63F-4C9E-9314-A8B9005FF404" AffectTextColor="No" AffectNoteBody="Yes" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.769436 0.762219 0.390143</BorderColor>
+         <FillColor>0.912963 0.894118 0.644541</FillColor>
+      </Style>
+      <Style AffectFontStyle="No" AffectAlignment="No" Name="Brown Bubble" ID="76708751-E1E4-4E30-8643-84076118DB60" AffectTextColor="No" AffectNoteBody="Yes" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.269490 0.164034 0.186694</BorderColor>
+         <FillColor>0.934157 0.888319 0.785290</FillColor>
+      </Style>
+      <Style AffectFontStyle="Yes" AffectAlignment="Yes" Name="Title Text" ID="C8F737DA-B4E2-48D4-990A-74D728EAEE89" AffectTextColor="No" AffectNoteBody="No" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <IsBold>Yes</IsBold>
+         <FontSize>12.0</FontSize>
+      </Style>
+      <Style AffectFontStyle="No" AffectAlignment="No" Name="Red Text" ID="0A627D84-F6BF-4F5B-BBF7-6FFF40F46C3F" AffectTextColor="Yes" AffectNoteBody="No" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <TextColor>1.0 0.0 0.0</TextColor>
+      </Style>
+      <Style AffectFontStyle="No" AffectAlignment="No" Name="Pink Bubble" ID="FA691ABC-3E0D-48B2-AE31-D8FD9166C8FF" AffectTextColor="No" AffectNoteBody="Yes" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.690303 0.407263 0.550912</BorderColor>
+         <FillColor>0.898329 0.817472 0.865339</FillColor>
+      </Style>
+      <Style AffectFontStyle="No" AffectAlignment="No" Name="Green Bubble" ID="912417E1-B40C-491A-9C8E-21EF70F1BBD4" AffectTextColor="No" AffectNoteBody="Yes" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.399100 0.583322 0.354864</BorderColor>
+         <FillColor>0.808835 0.872419 0.801343</FillColor>
+      </Style>
+      <Style AffectFontStyle="No" AffectAlignment="No" Name="Blue Bubble" ID="E57C5801-3217-4793-A69D-37E3098357EE" AffectTextColor="No" AffectNoteBody="Yes" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.485893 0.568933 0.756207</BorderColor>
+         <FillColor>0.844068 0.869596 0.923064</FillColor>
+      </Style>
+   </NoteStyles>
+   <UISettings>
+      <BackgroundColor>1.0 0.988006 0.945006</BackgroundColor>
+      <DefaultFont>Helvetica</DefaultFont>
+      <DefaultTextColor>0.0 0.0 0.0</DefaultTextColor>
+   </UISettings>
+   <PrintSettings VerticalPagination="Auto" HorizontalPagination="Clip" Orientation="Portrait" RightMargin="12.000000" BottomMargin="12.000000" HorizontallyCentered="Yes" ScaleFactor="1.000000" PagesAcross="1" PaperType="iso-a4" PagesDown="1" TopMargin="12.000000" Collates="Yes" PaperSize="-1.000000,-1.000000" LeftMargin="12.000000" VerticallyCentered="Yes"/>
+</ScappleDocument>
