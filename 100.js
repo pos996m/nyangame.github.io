@@ -978,7 +978,7 @@ function ant00() {
     var ant1 = prompt("你好，歡迎餵貓貓遊戲！\n\n遊戲基本玩法為: 點貓貓來餵食，並取得飽足感來提升等級。\n提醒您，音效預設是開啟的，而背景樂則是關閉！\n\n開啟作弊模式請輸入：\nnyan");
     if (ant1 == "nyan") {
         sum_all = 1000000;
-        alert('已開啟作弊模式\n飽足度增加二十萬。')
+        alert(`已開啟作弊模式\n飽足度增加${sum_all.toLocaleString()}。`)
     }
 }
 
