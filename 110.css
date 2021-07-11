@@ -178,7 +178,7 @@
     background-color: brown;
 }
 
-/* 貓手解說 */
+/* 乾乾解說 */
 
 #div2_7_1 {
     position: absolute;
@@ -205,7 +205,7 @@
     display: block;
 }
 
-/* 大打貓手解說 */
+/* 罐罐解說 */
 
 #div2_7_2 {
     position: absolute;
@@ -231,7 +231,7 @@
     display: block;
 }
 
-/* 借貓手解說 */
+/* 借乾乾解說 */
 
 #div2_7_3 {
     position: absolute;
@@ -295,7 +295,7 @@
     font-size: 20px;
 }
 
-/* 貓手經驗值的框 */
+/* 乾乾經驗值的框 */
 #div2_1 {
     position: absolute;
     top: -220%;
@@ -321,7 +321,7 @@
     display: block;
 }
 
-/* 大打貓手經驗值的框 */
+/* 罐罐經驗值的框 */
 #div2_2 {
     position: absolute;
     top: -220%;
@@ -347,7 +347,7 @@
     display: block;
 }
 
-/* 借貓手經驗值的框 */
+/* 借乾乾經驗值的框 */
 #div2_3 {
     position: absolute;
     top: -220%;
@@ -373,7 +373,7 @@
     display: block;
 }
 
-/* 大打貓手經驗值的框 */
+/* 罐罐經驗值的框 */
 #div2_4 {
     position: absolute;
     top: -220%;

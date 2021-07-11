@@ -63,7 +63,7 @@
             <Alignment>Left</Alignment>
             <Border Weight="0" Style="Rounded"/>
          </Appearance>
-         <String>點擊時有機率增加(暴擊)</String>
+         <String>點擊時有機率增加(罐罐)</String>
          <ConnectedNoteIDs>5, 12, 18</ConnectedNoteIDs>
       </Note>
       <Note Width="94.9219" FontSize="12" ID="8" Position="468.8,535.2">
@@ -87,7 +87,7 @@
             <Alignment>Left</Alignment>
             <Border Weight="0" Style="Rounded"/>
          </Appearance>
-         <String>自動生產線</String>
+         <String>自動阿嬤線</String>
          <ConnectedNoteIDs>4, 14</ConnectedNoteIDs>
       </Note>
       <Note Width="107.019" FontSize="12" ID="11" Position="262.5,210.2">
@@ -207,7 +207,7 @@ LV 10 = 200/s ; 12000p</String>
             <Alignment>Left</Alignment>
             <Border Weight="0" Style="Rounded"/>
          </Appearance>
-         <String>要顯示暴擊幫你加了額外多少</String>
+         <String>要顯示罐罐幫你加了額外多少</String>
          <ConnectedNoteIDs>18</ConnectedNoteIDs>
       </Note>
       <Note Width="35.4004" FontSize="12" ID="21" Position="795.8,534.4">

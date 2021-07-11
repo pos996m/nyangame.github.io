@@ -1,25 +1,25 @@
 var sum_all = 0; //總資產
 var sum_all2 = 0; //總共賺多少
 // 累績額度
-var a1_1 = 0; //總點擊的分數(不含暴擊和自動)
-var a1_2 = 0; //暴擊額外帶來的效益
+var a1_1 = 0; //總點擊的分數(不含罐罐和自動)
+var a1_2 = 0; //罐罐額外帶來的效益
 var a1_3 = 0; //自動額外帶來的效益
-var a1_4 = 0; //生產額外帶來的效益
+var a1_4 = 0; //阿嬤額外帶來的效益
 // 等級
 var lv_1 = 1; //點擊等級
-var lv_2 = 1; //暴擊等級
+var lv_2 = 1; //罐罐等級
 var lv_3 = 1; //自動等級
-var lv_4 = 1; //生產等級
+var lv_4 = 1; //阿嬤等級
 // 功能值
 var opt_1 = 1; //點擊倍率
-var opt_2 = 0; //暴擊率
+var opt_2 = 0; //罐罐率
 var opt_3 = 0; //自動秒數
-var opt_4 = 0; //一秒生產幾個
+var opt_4 = 0; //一秒阿嬤幾個
 // 需消費金額
 var cash_1 = 20; //倍率下一等級金費
-var cash_2 = 50; //暴擊下一等級金費
+var cash_2 = 50; //罐罐下一等級金費
 var cash_3 = 40; //自動下一等級金費
-var cash_4 = 1000; //生產下一等級金費
+var cash_4 = 1000; //阿嬤下一等級金費
 
 // 下階段顯示四個技能數值
 let opts = [
@@ -36,34 +36,27 @@ function fn1_0() {
     xx = Math.ceil(Math.random() * 100) //亂數值
     document.getElementById("cataud3").play();
 
-    // console.log(xx);
     if (xx < opt_2) {
         // a1_1 += (opt_1 * 4); //顯示總點擊分數
-        a1_2 += (opt_1 * 4); //顯示暴擊額外為你多帶來多少效益
-        sum_all += (opt_1 * 4); //總次數(會因為購買技能扣除)(暴擊的)
+        a1_2 += (opt_1 * 4); //顯示罐罐額外為你多帶來多少效益
+        sum_all += (opt_1 * 4); //總次數(會因為購買技能扣除)(罐罐的)
         sum_all2 += (opt_1 * 4);
         document.getElementById('test111').innerHTML = "+" + (opt_1 * 4) + " <span id='test1110'>(罐罐!!)</span>";
-        // console.log('點擊獲得' + a1_1 + '(暴擊)');
-        // console.log('暴擊為你多獲得' + a1_2);
         fn_top();
-        // fn_pm()
     } else {
         a1_1 += opt_1;
         sum_all += opt_1; //總次數(會因為購買技能扣除)(點擊的)
         sum_all2 += opt_1;
         document.getElementById('test111').innerHTML = "+" + opt_1;
-        // console.log('點擊獲得' + a1_1);
         fn_top();
-        // fn_pm()
     }
-    // return a1_1;
 }
 
-// 更改需要消費的值
+// 更改下一級需要消費的值
 var cashid_10 = document.getElementById('cashid_1');
 cashid_10.innerHTML = cash_1;
 
-// '點擊'的值，由點技能來執行，且是最底層執行，裡面涵蓋暴擊與自動的執行
+// '點擊'的值，由點技能來執行，且是最底層執行，裡面涵蓋罐罐與自動的執行
 function fn1_1() {
     switch (lv_1) {
         case 1:
@@ -123,9 +116,7 @@ function fn1_1() {
             console.log('點石成金成就')
             document.getElementById('optsid_1_1').innerHTML = "";
             document.getElementById('div2_1').innerHTML = "乾乾已經滿級，<br>不要怕餵完，<br>倉庫還有幾萬包!";
-            // cashid_10.innerHTML = "乾乾已經滿級，<br>不要怕餵完，<br>倉庫還有幾萬包!";;
             document.getElementById('lv_max10').innerHTML = "滿級"
-            // document.getElementById('lv_max1').style.backgroundColor = "brown"
             break;
     }
 }
@@ -158,7 +149,7 @@ function fn_ctrl_01() {
 var cashid_20 = document.getElementById('cashid_2');
 cashid_20.innerHTML = cash_2;
 
-// '暴擊'的值
+// '罐罐'的值
 function fn2_1() {
     switch (lv_2) {
         case 1:
@@ -222,18 +213,18 @@ function fn2_1() {
     }
 }
 
-// '暴擊'的技能lv提升
+// '罐罐'的技能lv提升
 function fn2_2() {
     if (lv_2 < 10) {
         lv_2++;
-        console.log('暴擊LV' + lv_2);
+        console.log('罐罐LV' + lv_2);
         fn2_1();
     } else {
-        console.log('暴擊10LV已經滿等了')
+        console.log('罐罐10LV已經滿等了')
     }
 }
 
-// 暴擊，技能購買控制器
+// 罐罐，技能購買控制器
 function fn_ctrl_02() {
     if (sum_all >= cash_2 && lv_2 < 10) {
         sum_all -= cash_2;
@@ -266,7 +257,6 @@ function fn3_1() {
         case 3:
             opt_3 = 7500;
             cash_3 = 160;
-            // clearInterval(timeclr3_1);
             document.getElementById('optsid_3').innerHTML = opts[2][lv_3];
             cashid_30.innerHTML = cash_3;
             clearInterval(timeclr3_2);
@@ -275,7 +265,6 @@ function fn3_1() {
         case 4:
             opt_3 = 6000;
             cash_3 = 320;
-            // clearInterval(timeclr3_1);
             document.getElementById('optsid_3').innerHTML = opts[2][lv_3];
             cashid_30.innerHTML = cash_3;
             clearInterval(timeclr3_2);
@@ -284,7 +273,6 @@ function fn3_1() {
         case 5:
             opt_3 = 4800;
             cash_3 = 640;
-            // clearInterval(timeclr3_1);
             document.getElementById('optsid_3').innerHTML = opts[2][lv_3];
             cashid_30.innerHTML = cash_3;
             clearInterval(timeclr3_2);
@@ -293,7 +281,6 @@ function fn3_1() {
         case 6:
             opt_3 = 4000;
             cash_3 = 1280;
-            // clearInterval(timeclr3_1);
             document.getElementById('optsid_3').innerHTML = opts[2][lv_3];
             cashid_30.innerHTML = cash_3;
             clearInterval(timeclr3_2);
@@ -302,7 +289,6 @@ function fn3_1() {
         case 7:
             opt_3 = 3000;
             cash_3 = 2560;
-            // clearInterval(timeclr3_1);
             document.getElementById('optsid_3').innerHTML = opts[2][lv_3];
             cashid_30.innerHTML = cash_3;
             clearInterval(timeclr3_2);
@@ -311,7 +297,6 @@ function fn3_1() {
         case 8:
             opt_3 = 2000;
             cash_3 = 5120;
-            // clearInterval(timeclr3_1);
             document.getElementById('optsid_3').innerHTML = opts[2][lv_3];
             cashid_30.innerHTML = cash_3;
             clearInterval(timeclr3_2);
@@ -320,7 +305,6 @@ function fn3_1() {
         case 9:
             opt_3 = 1000;
             cash_3 = 10240;
-            // clearInterval(timeclr3_1);
             document.getElementById('optsid_3').innerHTML = opts[2][lv_3];
             cashid_30.innerHTML = cash_3;
             clearInterval(timeclr3_2);
@@ -328,7 +312,6 @@ function fn3_1() {
             break;
         case 10:
             opt_3 = 500;
-            // clearInterval(timeclr3_1);
             document.getElementById('lv_max30').innerHTML = "滿級"
             document.getElementById('optsid_3_1').innerHTML = "";
             document.getElementById('div2_3').innerHTML = "自動餵食器已經滿級，<br>環遊世界都沒問題，<br>但現在疫情期間，<br>還是待在家吧。";
@@ -349,14 +332,13 @@ function fn3_2() {
 
 // 計算'自動'為你多帶來的效益
 function fn3_3() {
-    // console.log('自動點擊多賺取')
     xx = Math.ceil(Math.random() * 100)
     if (xx < opt_2) {
         sum_all += (opt_1 * 4);
         sum_all2 += (opt_1 * 4);
         a1_2 += (opt_1 * 4);
         a1_3 += (opt_1 * 4); //顯示總點擊分數
-        console.log(a1_3 + '(暴擊自動)');
+        console.log(a1_3 + '(罐罐自動)');
         document.getElementById('test111').innerHTML = "+" + (opt_1 * 4) + " <span id='test1110'>(罐罐!!)</span>";
         fn_top();
     } else {
@@ -378,10 +360,7 @@ function fn3_0() {
     if (lv_3 == 1) {
         console.log('你尚未點自動技能');
     } else {
-        // timeclr3_1 = setInterval(fn1_0, opt_3);
-        // setInterval(console.log('test'), opt_3);
         timeclr3_2 = setInterval(fn3_3, opt_3);
-        // fn3_0();
     }
 }
 
@@ -402,7 +381,7 @@ function fn_ctrl_03() {
 var cashid_40 = document.getElementById('cashid_4');
 cashid_40.innerHTML = cash_4;
 
-// '生產'的值
+// '阿嬤'的值
 function fn4_1() {
     switch (lv_4) {
         case 1:
@@ -466,37 +445,36 @@ function fn4_1() {
     }
 }
 
-// '生產'的技能lv提升
+// '阿嬤'的技能lv提升
 function fn4_2() {
     if (lv_4 < 10) {
         lv_4++;
-        console.log('生產LV' + lv_4);
+        // console.log('阿嬤LV' + lv_4);
         fn4_1();
     } else {
-        console.log('生產10LV已經滿等了');
+        // console.log('阿嬤10LV已經滿等了');
     }
 }
 
-// '生產'的執行
+// '阿嬤'的執行
 function fn4_3() {
     if (lv_4 == 1) {
         console.log('你尚未點自動技能');
     } else {
         setInterval(fn4_0, 1000);
-        // fn3_0();
     }
 }
 
-//計算'生產'為你多帶來的效益
+//計算'阿嬤'為你多帶來的效益
 function fn4_0() {
     a1_4 += opt_4;
     sum_all += opt_4;
     sum_all2 += opt_4;
-    console.log('已生產出 ' + a1_4 + '個');
+    // console.log('已阿嬤出 ' + a1_4 + '個');
     // fn_pm();
 }
 
-// 生產，技能購買控制器
+// 阿嬤，技能購買控制器
 function fn_ctrl_04() {
     if (sum_all >= cash_4 && lv_4 < 10) {
         sum_all -= cash_4;
@@ -571,21 +549,13 @@ function wed_new_title() {
     sum_allid.innerHTML = sum_all.toLocaleString() + "　";
     sum_allid2.innerHTML = sum_all2.toLocaleString() + "　";
 
-    // 防止外死無限循環
-    // if(top_carl2 == 20){
-    //     clearInterval(top_carl);
-    //     top_carl2 = 0;
-    // }
-
     // 技能灰色按鈕更新
     if (sum_all < cash_1) {
         lv_max1.style.backgroundColor = "gray"
-        lv_max1.style.cursor = "default"    
-        // window.getComputedStyle(button2_c[0],":active").boxShadow = ""
+        lv_max1.style.cursor = "default"
     } else if (lv_1 == 10) {
         lv_max1.style.backgroundColor = "gray"
         lv_max1.style.cursor = "default"
-        // window.getComputedStyle(button2_c[0],":active").boxShadow = ""
     } else {
         lv_max1.style.backgroundColor = ""
         lv_max1.style.cursor = ""
@@ -635,7 +605,7 @@ function wed_new_title() {
     } else {
         bk_button5.style.backgroundColor = "lightseagreen"
     }
-    // console.log(window.getComputedStyle(document.getElementById("bk_button1"),":hover").backgroundColor)
+
     // 聖誕帽
     if (sum_all < 1500 && ef_ctrl_2 == 1) {
         bk_button1.style.backgroundColor = "gray"
@@ -645,7 +615,6 @@ function wed_new_title() {
         bk_button1.style.cursor = ""
     } else {
         bk_button1.style.backgroundColor = "lightseagreen"
-        // window.getComputedStyle(document.getElementById("bk_button1"),":hover").backgroundColor = "rgb(29, 160, 153)"
     }
 
     if (sum_all < 3000 && ef_ctrl_3 == 1) {
@@ -703,57 +672,17 @@ function wed_new_title() {
 
 // 千位數加逗號
 // sum_all.toLocaleString()
-// sum_all = 50000;
-// 貓貓圖片交換
-// function change_cat_img(){
-//     var catimg = document.getElementById('catimg1');
-//     console.log(catimg.src.indexOf("cat1"));
-//     console.log(catimg.src);
-//     if(catimg.src.indexOf("cat1") != 26){
-//         catimg.src = "/img/cat1.png";
-//     }else{
-//         catimg.src = "/img/cat2.png";
-//     }
-// }
 
 var catimg = document.getElementById('catimg1');
 function catimgdown() {
     catimg.src = "./img/cat2.png";
-    // document.getElementById("cataud2").play();
-    // document.getElementById("cataud3").play();
 }
 function catimgup() {
     catimg.src = "./img/cat1.png";
-    // document.getElementById("cataud1").play();
 }
-
-
-// lv_3 = 9;
-// fn3_2()
-// fn3_0()
-
-// lv_4 = 9;
-// fn4_2()
-// fn4_3()
-
-// sum_all = 10000;
-// fn_ctrl_02()
-// fn_ctrl_02()
-// fn_ctrl_02()
-// fn_ctrl_02()
-// fn_ctrl_02()
-// fn1_0()
-// console.log(sum_all);
-// console.log(lv_2);
-// console.log(sum_all.toLocaleString());
 
 // 數值刷新器 
 setInterval(wed_new_title, 50);
-
-// lv_1 = 9;
-// sum_all = 50000000;
-// sum_all2 = 3949483310;
-
 
 // 顯示 + 多少數字
 var top_carl;
@@ -762,12 +691,10 @@ function fn_top() {
 
     if (0 < top_carl2 && top_carl2 < 20) {
         var top1 = document.getElementById('test111');
-
         clearInterval(top_carl);
         top1.style.top = "15%";
         top1.style.opacity = 1;
         top_carl2 = 0;
-        // top1.innerHTML = ""
     }
     top_carl = setInterval(top_carl_in, 50);
 }
@@ -776,8 +703,7 @@ function top_carl_in() {
     var top1 = document.getElementById('test111');
     var topstyle = window.getComputedStyle(top1);
     var elmTop = parseInt(topstyle.getPropertyValue("top"));
-    // var elmopa = parseInt(topstyle.getPropertyValue("opacity"));
-    // console.log(topstyle);
+
     if (top_carl2 == 20) {
         top1.style.top = "15%";
         top1.style.opacity = 1;
@@ -785,12 +711,9 @@ function top_carl_in() {
         top_carl2 = 0;
         top1.innerHTML = ""
     } else {
-        // top1.innerHTML = "+" + opt_1;
         top1.style.top = (elmTop - 3) + "px";
         top1.style.opacity -= 0.05
-        // top_carl2 = 0;
         top_carl2++;
-        // console.log(top_carl2);
     }
 }
 
@@ -818,7 +741,6 @@ function nomusic2() {
         document.getElementById("cataud1").muted = "true";
     } else {
         document.getElementById("nomusicname0").innerHTML = "音效開啟"
-        // document.getElementById("cataud2").play();
         document.getElementById("cataud1").play();
         document.getElementById("cataud6").muted = "";
         document.getElementById("cataud5").muted = "";
@@ -829,18 +751,6 @@ function nomusic2() {
 
 //預設音效開啟 
 document.getElementById('nomusic0').checked = "true";
-
-
-
-// 重製一下+1開關
-// fn1_0();
-
-// function nochangeimg(e){
-//     e.preventDefault()
-// }
-
-// timeclr3_2 = setInterval(fn3_3, opt_3);
-
 
 // 道具的執行
 
@@ -867,8 +777,9 @@ function fn_ef_1() {
         document.getElementById('bk_button5').style.backgroundColor = "lightseagreen"
         document.getElementById("cataud5").play();
         sum_all -= 12000;
+        sum_all2 += 24000;
         ef_ctrl_1 = 2;
-    }else {
+    } else {
         alert('飽足不夠!')
     }
 }
@@ -876,22 +787,23 @@ function fn_ef_1() {
 function fn_ef_2() {
     if (ef_ctrl_2 == 3) {
         document.getElementById('ef_2').style.display = "none";
-        document.getElementById('bk_button1').innerHTML = "使用"
+        document.getElementById('bk_button1').innerHTML = "使用";
         document.getElementById("cataud1").play();
         ef_ctrl_2 = 2;
     } else if (ef_ctrl_2 == 2) {
         document.getElementById('ef_2').style.display = "block";
-        document.getElementById('bk_button1').innerHTML = "卸下"
+        document.getElementById('bk_button1').innerHTML = "卸下";
         document.getElementById("cataud1").play();
         ef_ctrl_2 = 3;
     } else if (ef_ctrl_2 == 1 && sum_all >= 1500) {
 
-        document.getElementById('bk_button1').innerHTML = "使用"
-        document.getElementById('bk_button1').style.backgroundColor = "lightseagreen"
+        document.getElementById('bk_button1').innerHTML = "使用";
+        document.getElementById('bk_button1').style.backgroundColor = "lightseagreen";
         document.getElementById("cataud5").play();
         sum_all -= 1500;
+        sum_all2 += 3000;
         ef_ctrl_2 = 2;
-    }else {
+    } else {
         alert('飽足不夠!')
     }
 }
@@ -899,21 +811,22 @@ function fn_ef_2() {
 function fn_ef_3() {
     if (ef_ctrl_3 == 3) {
         document.getElementById('ef_3').style.display = "none";
-        document.getElementById('bk_button2').innerHTML = "使用"
+        document.getElementById('bk_button2').innerHTML = "使用";
         document.getElementById("cataud1").play();
         ef_ctrl_3 = 2;
     } else if (ef_ctrl_3 == 2) {
         document.getElementById('ef_3').style.display = "block";
-        document.getElementById('bk_button2').innerHTML = "卸下"
+        document.getElementById('bk_button2').innerHTML = "卸下";
         document.getElementById("cataud1").play();
         ef_ctrl_3 = 3;
     } else if (ef_ctrl_3 == 1 && sum_all >= 3000) {
-        document.getElementById('bk_button2').innerHTML = "使用"
-        document.getElementById('bk_button2').style.backgroundColor = "lightseagreen"
+        document.getElementById('bk_button2').innerHTML = "使用";
+        document.getElementById('bk_button2').style.backgroundColor = "lightseagreen";
         document.getElementById("cataud5").play();
         sum_all -= 3000;
+        sum_allid2 += 6000;
         ef_ctrl_3 = 2;
-    }else {
+    } else {
         alert('飽足不夠!')
     }
 }
@@ -934,8 +847,9 @@ function fn_ef_4() {
         document.getElementById('bk_button3').style.backgroundColor = "lightseagreen"
         document.getElementById("cataud5").play();
         sum_all -= 5000;
+        sum_all2 += 10000;
         ef_ctrl_4 = 2;
-    }else {
+    } else {
         alert('飽足不夠!')
     }
 }
@@ -956,8 +870,9 @@ function fn_ef_5() {
         document.getElementById('bk_button4').style.backgroundColor = "lightseagreen"
         document.getElementById("cataud5").play();
         sum_all -= 8000;
+        sum_all2 += 16000;
         ef_ctrl_5 = 2;
-    }else {
+    } else {
         alert('飽足不夠!')
     }
 }
@@ -979,8 +894,6 @@ function fn_ef_30() {
 function fn_ef_50() {
     alert('沾到圍巾了拉!')
 }
-
-// fn_ef_1();
 
 // 背景
 var fn_bks = document.getElementById('img_back');
@@ -1004,12 +917,12 @@ function fn_bk_1() {
         fn_bks0.style.backgroundColor = "lightsalmon";
         document.getElementById("cataud1").play();
         fn_bk_ctrl = 3;
-        // document.getElementById("cataud4").play();
     } else if (fn_bk_ctrl == 1 && sum_all >= 20000) {
         document.getElementById('bk_button6').innerHTML = "替換"
         document.getElementById('bk_button6').style.backgroundColor = "lightseagreen"
         document.getElementById("cataud5").play();
         sum_all -= 20000;
+        sum_all2 += 40000;
         fn_bk_ctrl = 2;
     } else {
         alert('飽足不夠!')
@@ -1037,6 +950,7 @@ function fn_bk_2() {
         document.getElementById('bk_button7').style.backgroundColor = "lightseagreen"
         document.getElementById("cataud5").play();
         sum_all -= 30000;
+        sum_all2 += 60000;
         fn_bk_ctrl2 = 2;
     } else {
         alert('飽足不夠!')
@@ -1057,23 +971,15 @@ function fn_bk_0() {
     if (fn_bk_ctrl2 == 2 || fn_bk_ctrl2 == 3) {
         fn_bk_ctrl2 = 2;
     }
-    // document.getElementById("cataud4").play();
 }
 
 
 function ant00() {
-    var ant1 = prompt("你好，歡迎餵貓貓遊戲！\n\n遊戲基本玩法為: 點貓貓來餵食，並取得飽足感來提升等級。\n提醒您，音效預設是開啟的，而背景樂則是關閉！\n\n開啟作弊模式請輸入：\ncatlovefood");
-    if (ant1 == "catlovefood") {
-        sum_all = 200000;
+    var ant1 = prompt("你好，歡迎餵貓貓遊戲！\n\n遊戲基本玩法為: 點貓貓來餵食，並取得飽足感來提升等級。\n提醒您，音效預設是開啟的，而背景樂則是關閉！\n\n開啟作弊模式請輸入：\nnyan");
+    if (ant1 == "nyan") {
+        sum_all = 1000000;
         alert('已開啟作弊模式\n飽足度增加二十萬。')
     }
 }
 
-// ant00()
-
-
-
-// fn_bk_1();
-
-// fn_bk_2();
-// sum_all = 250000;
+ant00()
