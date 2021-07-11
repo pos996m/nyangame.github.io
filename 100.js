@@ -824,7 +824,7 @@ function fn_ef_3() {
         document.getElementById('bk_button2').style.backgroundColor = "lightseagreen";
         document.getElementById("cataud5").play();
         sum_all -= 3000;
-        sum_allid2 += 6000;
+        sum_all2 += 6000;
         ef_ctrl_3 = 2;
     } else {
         alert('飽足不夠!')
